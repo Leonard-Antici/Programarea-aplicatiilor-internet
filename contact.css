@@ -1,0 +1,163 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header img {
+  vertical-align: middle;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  flex: 1 1 40%;
+}
+
+.contact-info h1, .contact-info h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-info ul {
+  list-style-type: none;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 30%;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h2 {
+  margin-bottom: 0.5rem;
+}
+
+.card-content .title {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.card-content p {
+  margin-bottom: 0.5rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin-right: 0.5rem;
+  color: #a71616; /* Sau orice culoare dorești */
+  text-decoration: none;
+  font-size: 1rem; /* Ajustează mărimea pictogramelor după preferință */
+}
+
+.social-icons a:hover {
+  color: #555; /* Culoarea pictogramei la hover */
+}
+
+
+/* Modal */
+.modal {
+  display: none; /* Ascunde modalul inițial */
+  position: fixed; /* Poziționează modalul pe întregul ecran */
+  z-index: 1; /* Afișează modalul deasupra restului conținutului */
+  left: 0;
+  top: 0;
+  width: 100%; /* Lățimea modalului */
+  height: 100%; /* Înălțimea modalului */
+  overflow: auto; /* Adaugă scrolling vertical */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Colorul cu opacitate */
+  padding-top: 60px; /* Adaugă spațiu deasupra conținutului modalului */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* Centrare modal */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Lățimea conținutului modalului */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Adăugați această secțiune de cod CSS pentru stilizarea butoanelor */
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Acesta este un exemplu, puteți ajusta după preferință */
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.maps {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px 0;
+}
